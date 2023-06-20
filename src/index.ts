@@ -7,6 +7,8 @@ const ROUTES = p_join(__dirname, "routes");
 
 const app = express();
 
+app.use(express.json());
+
 const PORT = 8080;
 
 function isDir(path: string) {
